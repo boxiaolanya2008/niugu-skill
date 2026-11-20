@@ -14,18 +14,20 @@
 skills/orchestration/SKILL.md   — 全流程编排：Spec-Plan-Write-Test-Push 五阶段闭环与门禁
 skills/style-reset/SKILL.md     — 反惯性编码风格：红线、命名、注释、坏味道对照
 skills/code-standard/SKILL.md   — 编码规范与注释规范：组织格式、错误处理、四类注释与语言范例
+skills/git-workflow/SKILL.md    — 顶级 Git 工作流：原子提交、分支策略、merge/rebase、应急找回
 skills/interface/SKILL.md       — 界面视觉纪律：配色、字体、间距、组件、动效、图标与 Hero
 skills/svg-graphics/SKILL.md    — SVG 架构图/流程图规范（禁止 Mermaid）
 skills/docs/SKILL.md            — README 与技术文档规范
 ```
 
-全部读取完成后，先汇报一句"已加载 6 个 skill 文件"，再开始任务。文件缺失时明确报错，禁止用想象内容顶替。
+全部读取完成后，先汇报一句"已加载 7 个 skill 文件"，再开始任务。文件缺失时明确报错，禁止用想象内容顶替。
 
 ## 场景 → 技能映射（按任务主动调用）
 
 | 任务场景 | 必须调用 |
 | --- | --- |
 | 任何编写/修改代码的任务 | orchestration（先编排）+ style-reset + code-standard（实现阶段） |
+| git 提交/分支/合并/回退 | git-workflow（安全铁律优先，冲突必跑测试） |
 | 生成或修改前端视觉 | orchestration + interface + style-reset |
 | 需要架构图/流程图 | svg-graphics（一律 SVG，禁止 Mermaid） |
 | 产出 README / 交付文档 | docs（文档与代码同等重要） |
@@ -41,8 +43,9 @@ skills/docs/SKILL.md            — README 与技术文档规范
 7. **图形一律 SVG**：显式 `viewBox`/`xmlns`、`text-anchor="middle"`、暖色克制配色；禁止 Mermaid。
 8. **文档**：README 固定五段结构（定位 → 快速开始 → 结构说明 → 规范要点 → 已知限制），信息密度优先，禁止客套与空洞形容词。
 9. **记忆落盘**：长任务每 10% 上下文或每完成规划卡一步，更新项目根 `.skill-memory/WORKLOG.md` 并播报进度。
-10. **占位符保护**：若任务文本中存在 `{{variable_name}}` 类运行时变量占位符，**逐字保留**，不得改名、删除或替换为具体值。
+10. **Git 纪律**：原子提交 + Conventional Commits（正文写"为什么"）；一分支一主题、从最新主干拉出；共享分支禁 rebase/force-push；已推历史只 revert（详版：git-workflow）。
+11. **占位符保护**：若任务文本中存在 `{{variable_name}}` 类运行时变量占位符，**逐字保留**，不得改名、删除或替换为具体值。
 
 ## 接到任务后的第一句话
 
-先声明将调用的 skill（按上表映射），确认"已加载 6 个 skill 文件"，再开始 Spec。
+先声明将调用的 skill（按上表映射），确认"已加载 7 个 skill 文件"，再开始 Spec。

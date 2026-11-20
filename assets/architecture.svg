@@ -13,57 +13,64 @@
   <!-- PROMPT 枢纽 -->
   <rect x="240" y="88" width="400" height="72" fill="#f7e3cf" stroke="#c96f2e" stroke-width="2" rx="10"/>
   <text x="440" y="118" text-anchor="middle" font-size="16" font-weight="700" fill="#2d2a26">PROMPT.md 总控枢纽</text>
-  <text x="440" y="142" text-anchor="middle" font-size="11" fill="#8a8378">强制第一步：读取下述 6 个 skill 文件</text>
+  <text x="440" y="142" text-anchor="middle" font-size="11" fill="#8a8378">强制第一步：读取下述 7 个 skill 文件</text>
 
   <!-- 枢纽 → skill 区 -->
   <line x1="440" y1="160" x2="440" y2="196" stroke="#c96f2e" stroke-width="2" marker-end="url(#arrow)"/>
   <text x="440" y="184" text-anchor="middle" font-size="10" fill="#c96f2e">读取后立即加载</text>
 
-  <!-- skill 区带：6 卡片，卡片宽 122 间距 15 -->
+  <!-- skill 区带：7 卡片，卡宽 106 间距 11 -->
   <rect x="36" y="200" width="808" height="170" fill="#ffffff" stroke="#d8cfbe" stroke-width="1" rx="10"/>
   <text x="52" y="224" font-size="11" font-weight="700" fill="#8a8378">skills/（各自独立分支交付）</text>
 
-  <rect x="46" y="238" width="122" height="114" fill="#faf7f2" stroke="#c96f2e" stroke-width="2" rx="8"/>
-  <text x="107" y="264" text-anchor="middle" font-size="12.5" font-weight="700" fill="#2d2a26">orchestration</text>
-  <text x="107" y="286" text-anchor="middle" font-size="10" fill="#8a8378">五阶段闭环</text>
-  <text x="107" y="304" text-anchor="middle" font-size="10" fill="#8a8378">门禁 G1–G4</text>
-  <text x="107" y="322" text-anchor="middle" font-size="10" fill="#8a8378">三次熔断</text>
-  <text x="107" y="340" text-anchor="middle" font-size="9.5" fill="#c96f2e">feat/orchestration</text>
+  <rect x="46" y="238" width="106" height="114" fill="#faf7f2" stroke="#c96f2e" stroke-width="2" rx="8"/>
+  <text x="99" y="262" text-anchor="middle" font-size="11" font-weight="700" fill="#2d2a26">orchestration</text>
+  <text x="99" y="284" text-anchor="middle" font-size="9.5" fill="#8a8378">五阶段闭环</text>
+  <text x="99" y="302" text-anchor="middle" font-size="9.5" fill="#8a8378">门禁 G1–G4</text>
+  <text x="99" y="320" text-anchor="middle" font-size="9.5" fill="#8a8378">三次熔断</text>
+  <text x="99" y="340" text-anchor="middle" font-size="8.5" fill="#c96f2e">feat/orchestration</text>
 
-  <rect x="183" y="238" width="122" height="114" fill="#faf7f2" stroke="#d8cfbe" stroke-width="1.5" rx="8"/>
-  <text x="244" y="264" text-anchor="middle" font-size="12.5" font-weight="700" fill="#2d2a26">style-reset</text>
-  <text x="244" y="286" text-anchor="middle" font-size="10" fill="#8a8378">反惯性红线</text>
-  <text x="244" y="304" text-anchor="middle" font-size="10" fill="#8a8378">领域命名</text>
-  <text x="244" y="322" text-anchor="middle" font-size="10" fill="#8a8378">坏味道对照</text>
-  <text x="244" y="340" text-anchor="middle" font-size="9.5" fill="#c96f2e">feat/style-reset</text>
+  <rect x="163" y="238" width="106" height="114" fill="#faf7f2" stroke="#d8cfbe" stroke-width="1.5" rx="8"/>
+  <text x="216" y="262" text-anchor="middle" font-size="11" font-weight="700" fill="#2d2a26">style-reset</text>
+  <text x="216" y="284" text-anchor="middle" font-size="9.5" fill="#8a8378">反惯性红线</text>
+  <text x="216" y="302" text-anchor="middle" font-size="9.5" fill="#8a8378">领域命名</text>
+  <text x="216" y="320" text-anchor="middle" font-size="9.5" fill="#8a8378">坏味道对照</text>
+  <text x="216" y="340" text-anchor="middle" font-size="8.5" fill="#c96f2e">feat/style-reset</text>
 
-  <rect x="320" y="238" width="122" height="114" fill="#faf7f2" stroke="#c96f2e" stroke-width="2" rx="8"/>
-  <text x="381" y="264" text-anchor="middle" font-size="12.5" font-weight="700" fill="#2d2a26">code-standard</text>
-  <text x="381" y="286" text-anchor="middle" font-size="10" fill="#8a8378">组织与格式</text>
-  <text x="381" y="304" text-anchor="middle" font-size="10" fill="#8a8378">错误处理</text>
-  <text x="381" y="322" text-anchor="middle" font-size="10" fill="#8a8378">四类注释规范</text>
-  <text x="381" y="340" text-anchor="middle" font-size="9.5" fill="#c96f2e">feat/code-standard</text>
+  <rect x="280" y="238" width="106" height="114" fill="#faf7f2" stroke="#c96f2e" stroke-width="2" rx="8"/>
+  <text x="333" y="262" text-anchor="middle" font-size="11" font-weight="700" fill="#2d2a26">code-standard</text>
+  <text x="333" y="284" text-anchor="middle" font-size="9.5" fill="#8a8378">组织与格式</text>
+  <text x="333" y="302" text-anchor="middle" font-size="9.5" fill="#8a8378">错误处理</text>
+  <text x="333" y="320" text-anchor="middle" font-size="9.5" fill="#8a8378">四类注释</text>
+  <text x="333" y="340" text-anchor="middle" font-size="8.5" fill="#c96f2e">feat/code-standard</text>
 
-  <rect x="457" y="238" width="122" height="114" fill="#faf7f2" stroke="#d8cfbe" stroke-width="1.5" rx="8"/>
-  <text x="518" y="264" text-anchor="middle" font-size="12.5" font-weight="700" fill="#2d2a26">interface</text>
-  <text x="518" y="286" text-anchor="middle" font-size="10" fill="#8a8378">界面纪律</text>
-  <text x="518" y="304" text-anchor="middle" font-size="10" fill="#8a8378">色相 ≤3</text>
-  <text x="518" y="322" text-anchor="middle" font-size="10" fill="#8a8378">图标 · Hero</text>
-  <text x="518" y="340" text-anchor="middle" font-size="9.5" fill="#c96f2e">feat/interface</text>
+  <rect x="397" y="238" width="106" height="114" fill="#faf7f2" stroke="#c96f2e" stroke-width="2" rx="8"/>
+  <text x="450" y="262" text-anchor="middle" font-size="11" font-weight="700" fill="#2d2a26">git-workflow</text>
+  <text x="450" y="284" text-anchor="middle" font-size="9.5" fill="#8a8378">原子提交</text>
+  <text x="450" y="302" text-anchor="middle" font-size="9.5" fill="#8a8378">分支策略</text>
+  <text x="450" y="320" text-anchor="middle" font-size="9.5" fill="#8a8378">revert/reflog</text>
+  <text x="450" y="340" text-anchor="middle" font-size="8.5" fill="#c96f2e">feat/git-skill</text>
 
-  <rect x="594" y="238" width="122" height="114" fill="#faf7f2" stroke="#d8cfbe" stroke-width="1.5" rx="8"/>
-  <text x="655" y="264" text-anchor="middle" font-size="12.5" font-weight="700" fill="#2d2a26">svg-graphics</text>
-  <text x="655" y="286" text-anchor="middle" font-size="10" fill="#8a8378">SVG 图形规范</text>
-  <text x="655" y="304" text-anchor="middle" font-size="10" fill="#8a8378">配色令牌</text>
-  <text x="655" y="322" text-anchor="middle" font-size="10" fill="#8a8378">禁止 Mermaid</text>
-  <text x="655" y="340" text-anchor="middle" font-size="9.5" fill="#c96f2e">feat/svg-graphics</text>
+  <rect x="514" y="238" width="106" height="114" fill="#faf7f2" stroke="#d8cfbe" stroke-width="1.5" rx="8"/>
+  <text x="567" y="262" text-anchor="middle" font-size="11" font-weight="700" fill="#2d2a26">interface</text>
+  <text x="567" y="284" text-anchor="middle" font-size="9.5" fill="#8a8378">界面纪律</text>
+  <text x="567" y="302" text-anchor="middle" font-size="9.5" fill="#8a8378">色相 ≤3</text>
+  <text x="567" y="320" text-anchor="middle" font-size="9.5" fill="#8a8378">图标 · Hero</text>
+  <text x="567" y="340" text-anchor="middle" font-size="8.5" fill="#c96f2e">feat/interface</text>
 
-  <rect x="731" y="238" width="112" height="114" fill="#faf7f2" stroke="#d8cfbe" stroke-width="1.5" rx="8"/>
-  <text x="787" y="264" text-anchor="middle" font-size="12.5" font-weight="700" fill="#2d2a26">docs</text>
-  <text x="787" y="286" text-anchor="middle" font-size="10" fill="#8a8378">README 五段</text>
-  <text x="787" y="304" text-anchor="middle" font-size="10" fill="#8a8378">信息密度</text>
-  <text x="787" y="322" text-anchor="middle" font-size="10" fill="#8a8378">变更写为什么</text>
-  <text x="787" y="340" text-anchor="middle" font-size="9.5" fill="#c96f2e">feat/docs</text>
+  <rect x="631" y="238" width="106" height="114" fill="#faf7f2" stroke="#d8cfbe" stroke-width="1.5" rx="8"/>
+  <text x="684" y="262" text-anchor="middle" font-size="11" font-weight="700" fill="#2d2a26">svg-graphics</text>
+  <text x="684" y="284" text-anchor="middle" font-size="9.5" fill="#8a8378">SVG 图形</text>
+  <text x="684" y="302" text-anchor="middle" font-size="9.5" fill="#8a8378">配色令牌</text>
+  <text x="684" y="320" text-anchor="middle" font-size="9.5" fill="#8a8378">禁 Mermaid</text>
+  <text x="684" y="340" text-anchor="middle" font-size="8.5" fill="#c96f2e">feat/svg-graphics</text>
+
+  <rect x="748" y="238" width="96" height="114" fill="#faf7f2" stroke="#d8cfbe" stroke-width="1.5" rx="8"/>
+  <text x="796" y="262" text-anchor="middle" font-size="11" font-weight="700" fill="#2d2a26">docs</text>
+  <text x="796" y="284" text-anchor="middle" font-size="9.5" fill="#8a8378">README 五段</text>
+  <text x="796" y="302" text-anchor="middle" font-size="9.5" fill="#8a8378">信息密度</text>
+  <text x="796" y="320" text-anchor="middle" font-size="9.5" fill="#8a8378">变更写为什么</text>
+  <text x="796" y="340" text-anchor="middle" font-size="8.5" fill="#c96f2e">feat/docs</text>
 
   <!-- 底注 -->
   <text x="440" y="404" text-anchor="middle" font-size="10.5" fill="#8a8378">全部分支验证后合入 master　·　{{variable_name}} 占位符一律逐字保留</text>

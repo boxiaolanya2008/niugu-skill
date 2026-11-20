@@ -91,7 +91,7 @@ Spec → Plan → Write → Test → Push
 
 **做什么**：可追溯地交付。
 
-- 提交信息：`类型(范围): 摘要`，类型限定 `feat / fix / refactor / docs / test / chore`。
+- 提交信息：`类型(范围): 摘要`，类型限定 `feat / fix / refactor / docs / test / chore`（原子提交、分支策略、冲突解决与应急找回等完整 Git 纪律见 niugu-git-workflow）。
 - 提交正文列：改动文件、决策理由、已知风险。
 - 多 skill / 多模块任务用分支隔离：每个功能单元一个 `feat/<名字>` 分支，验证后合入主干。
 - 变更说明与 README 同步更新，文档是正式交付物。
