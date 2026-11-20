@@ -18,3 +18,5 @@
 ## 踩坑清单
 
 - PowerShell 校验"Mermaid 出现"时口径过宽：凡含关键词即命中，会把禁令文字误判为违规。校验应匹配代码块签名（```mermaid / graph TD / flowchart），而非裸关键词。
+- v2 期间多分支切换时在 feat/hub 分支跑 5-skill 校验全部 False：skill 文件只在其所属 feat/* 分支存在，属分支隔离的正常表现。**校验必须在合并后的 master 上执行**，或用 `git show branch:path` 按分支取文件。
+- 长脚本（>15 行多段 foreach + try/catch 混合）在本环境偶发整体无输出且无报错：拆成 ≤6 行的小段逐项执行可稳定拿到输出。原因未定位，规避方式已验证有效。
