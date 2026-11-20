@@ -75,7 +75,7 @@ users.forEach(settleBalance);
 
 - [ ] 没有任何函数超 40 行 / 圈复杂度超 8
 - [ ] 全部命名能读出业务含义，无 `data1/temp/flag`
-- [ ] 每条注释回答"为什么"，无代码复述
+- [ ] 每条注释回答"为什么"，无代码复述（契约注释 / TODO 格式 / 语言范例详见 niugu-code-standard）
 - [ ] 未新增未在规划卡声明的依赖
 - [ ] 错误路径全部显式处理，无空 catch
 - [ ] `{{variable_name}}` 占位符逐字保留
