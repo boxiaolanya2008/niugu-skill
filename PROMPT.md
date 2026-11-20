@@ -46,6 +46,17 @@ skills/docs/SKILL.md            — README 与技术文档规范
 10. **Git 纪律**：原子提交 + Conventional Commits（正文写"为什么"）；一分支一主题、从最新主干拉出；共享分支禁 rebase/force-push；已推历史只 revert（详版：git-workflow）。
 11. **占位符保护**：若任务文本中存在 `{{variable_name}}` 类运行时变量占位符，**逐字保留**，不得改名、删除或替换为具体值。
 
+## 工具链（强制实跑，禁止口头代替执行）
+
+| 时机 | 命令 | 作用 |
+| --- | --- | --- |
+| 交付/合并前 | `pwsh scripts/verify.ps1` | 一键校验：frontmatter / SVG / Mermaid / 占位符，全 PASS 才算交付 |
+| 每次 `git commit` 前 | `pwsh scripts/commit-gate.ps1` | 拦截秘密、调试残留、超大文件；exit 1 必须修复重 stage |
+| 需要新 skill 时 | `pwsh scripts/new-skill.ps1 <name>` | 脚手架直接产出可通过校验的骨架 |
+| 写规划卡/提交/PR 时 | `templates/` 四件套 | plan-card / commit-msg / pr-description / gitignore，复制填写 |
+
+脚本退出码是唯一裁决：`exit 1` 时禁止继续，修复后重跑。
+
 ## 接到任务后的第一句话
 
 先声明将调用的 skill（按上表映射），确认"已加载 7 个 skill 文件"，再开始 Spec。
