@@ -1,0 +1,31 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <linearGradient id="glyphGrad" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#1f7cf5"/>
+      <stop offset="0.45" stop-color="#6aa8ff"/>
+      <stop offset="0.72" stop-color="#b18cff"/>
+      <stop offset="1" stop-color="#8b2ff0"/>
+    </linearGradient>
+    <linearGradient id="glyphGradSoft" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#1f7cf5" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#8b2ff0" stop-opacity="0.38"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 展示页衬底（非图标本体，交付 PNG 时不含此层） -->
+  <rect x="0" y="0" width="512" height="512" fill="#1a1a1a" rx="40"/>
+
+  <!-- 图标本体：白 squircle，rx ≈ 22% 边长 -->
+  <rect x="36" y="36" width="440" height="440" rx="104" fill="#ffffff"/>
+
+  <!-- 字形后景层：半透明同构 ribbon，制造前后层次 -->
+  <path d="M 148 356 L 205 200 L 258 322 L 311 200 L 368 356"
+        fill="none" stroke="url(#glyphGradSoft)" stroke-width="74"
+        stroke-linecap="round" stroke-linejoin="round"
+        transform="translate(14 -10)"/>
+
+  <!-- 字形主体：粗圆笔触 M，对角蓝→紫渐变 -->
+  <path d="M 148 366 L 205 210 L 258 332 L 311 210 L 368 366"
+        fill="none" stroke="url(#glyphGrad)" stroke-width="74"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

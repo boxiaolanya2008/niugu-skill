@@ -2,6 +2,9 @@
 
 ## 已定决策
 
+- 2026-11-20 v3 视觉参考决策：落地页参考现代组件库范式（悬浮胶囊导航 + 渐变品牌字 + Hero 光晕）；图标参考现代应用图标范式（白 squircle + 多色渐变粗圆笔触字形）
+- 2026-11-20 v3 渐变开闸边界：渐变仅在品牌层（图标/logo/Hero）允许，UI 组件仍执行色相 ≤3 与禁霓虹渐变；interface skill 相应条目已改写消除冲突
+
 - 2026-11-20 v2 重构决策：单合集拆为 5 个独立 skill（orchestration / style-reset / interface / svg-graphics / docs），每个 skill 独立 feat/* 分支交付后合入 master
 - 2026-11-20 PROMPT.md 定位为总控枢纽：读完 Prompt 后强制立即读取全部 5 个 skill 文件，缺失报错禁止臆造
 - 2026-11-20 保留交付形态：Skill 目录格式 + 独立 Prompt 版两者兼有；风格规范完全自包含

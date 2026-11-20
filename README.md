@@ -19,10 +19,11 @@ git clone <repo> && cat PROMPT.md
 | `PROMPT.md` | 总控枢纽：强制第一步读取全部 skill + 场景映射表 | feat/hub |
 | `skills/orchestration/SKILL.md` | 五阶段闭环、门禁 G1–G4、三次熔断、记忆落盘 | feat/orchestration |
 | `skills/style-reset/SKILL.md` | 反惯性编码：红线、命名、注释、坏味道对照 | feat/style-reset |
-| `skills/interface/SKILL.md` | 界面纪律：配色、字体气质表、间距刻度、动效 | feat/interface |
+| `skills/interface/SKILL.md` | 界面纪律：配色、字体气质表、间距刻度、现代图标（squircle+渐变）、落地页 Hero | feat/interface → feat/icon-visual |
 | `skills/svg-graphics/SKILL.md` | SVG 图形规范：配色令牌、三种图式模板（禁 Mermaid） | feat/svg-graphics |
 | `skills/docs/SKILL.md` | README 五段结构、信息密度、变更记录写为什么 | feat/docs |
 | `assets/architecture.svg` | 体系架构图（本图内嵌于下方） | feat/hub |
+| `assets/icon-sample.svg` | 现代图标样例：白 squircle + 蓝紫渐变粗圆笔触字形 | feat/icon-visual |
 
 <svg viewBox="0 0 880 440" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
   <defs>
@@ -80,6 +81,7 @@ git clone <repo> && cat PROMPT.md
 - **场景精确映射**：编码→orchestration+style-reset；前端→+interface；图形→svg-graphics；文档→docs。
 - **五阶段门禁**：验收标准未定稿不进 Plan；无规划卡不写代码；无运行证据不说"修好了"；测试未全绿不进 Push。
 - **反惯性基线**：单函数 ≤40 行、色相 ≤3、图形一律 SVG 禁 Mermaid、文档五段固定结构。
+- **品牌视觉开闸**：渐变仅限图标/logo/Hero（白 squircle + 对角渐变粗圆笔触字形；Hero 用悬浮胶囊导航 + 主视觉光晕），UI 组件仍保持克制。
 - **分支交付**：每个 skill 独立 `feat/*` 分支开发并验证，合入 master 保证可追溯。
 
 ## 已知限制
